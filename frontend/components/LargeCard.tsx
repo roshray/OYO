@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-function LargeCard({img, title, description, buttonText}) {
+function LargeCard({img, title, description, buttonText}: any): JSX.Element {
   return (
     <section className="relative py-16 cursor-pointer">
         <div className="relative h-96 min-w-[300px]">
