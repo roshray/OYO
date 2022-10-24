@@ -12,8 +12,9 @@ function Search() {
 
   const range = `${formattedStartDate} - ${formattedEndDate}`
 
+  
 
-  console.log(router.query)
+
   return (
     <div className="h-screen">
         <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`}/>
