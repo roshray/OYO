@@ -40,7 +40,7 @@ function Header({placeholder}:any) {
 
   const search = () => {
     router.push({
-      pathname: '/search',
+      pathname: "/search",
       query: {
         location: searchInput,
         startDate: startDate.toISOString(),
