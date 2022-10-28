@@ -19,7 +19,7 @@ function Header({placeholder}:any) {
   const [startDate, setStartDate] = useState(new Date())
   
   const [endDate, setEndDate] = useState(new Date())
-  const [noOfGuests, setNoOfGuests] = useState(1) 
+  const [noOfGuests, setNoOfGuests] = useState("") 
 
   const router = useRouter()
 
@@ -45,7 +45,7 @@ function Header({placeholder}:any) {
         location: searchInput,
         startDate: startDate.toISOString(),
         endDate: endDate.toISOString(),
-        noOfGuests, 
+        noOfGuests: noOfGuests, 
       },
     })
   }
