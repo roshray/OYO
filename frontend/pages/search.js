@@ -3,11 +3,10 @@ import Footer from "../components/Footer"
 import { useRouter } from "next/router"
 import { format } from "date-fns"
 import InfoCard from "../components/InfoCard"
+import Map from "../components/Map"
 
 function Search({searchResults}) {
   const router = useRouter()
-
-  console.log(searchResults)
 
   const {location, startDate, endDate, noOfGuests} = router.query
 
@@ -17,8 +16,6 @@ function Search({searchResults}) {
   const range = `${formattedStartDate} - ${formattedEndDate}`
 
   
-
-
   return (
     <div className="h-screen">
         <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`}/>
@@ -52,6 +49,11 @@ function Search({searchResults}) {
             </div>
           
           </section>
+
+          <section className="">
+            <Map />
+          </section>
+          
           
         </main> 
 
